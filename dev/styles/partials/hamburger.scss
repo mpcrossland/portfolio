@@ -1,0 +1,77 @@
+$bar-width: 50px;
+$bar-height: 10px;
+$bar-spacing: 17px;
+
+.hamburger-menu {
+	z-index: 999999;
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	width: $bar-width;
+	height: $bar-height + $bar-spacing*2;
+	cursor: pointer;
+}
+
+.h-nav{
+	display: none;
+}
+.visible{
+	display: block;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+  width: $bar-width;
+	height: $bar-height;
+}
+
+.bar {
+	position: relative;
+	transform: translateY($bar-spacing);
+	background: #333333;
+	transition: all 0ms 0ms;
+  
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.bar:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: #333333;
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: #333333;
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+	top: 0;
+	background: #CCCCCC;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.bar.animate:before {
+	bottom: 0;
+	background: #CCCCCC;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 736px) {
+	.hamburger-menu {
+		display: block;
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "matthewcrossland.com",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "matthew",
+    "crossland",
+    "developer",
+    "programmer"
+  ],
+  "author": "matthew crossland",
+  "license": "ISC",
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "minimatch": "^3.0.4",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

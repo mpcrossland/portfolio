@@ -1,0 +1,212 @@
+section.portfolio{
+	background-color: rgb(245, 245, 245);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	h2{
+		padding-top: 50px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.card-1, .card-2, .card-3, .card-4, .card-5{
+		display: flex;
+		margin: auto;
+		margin-bottom: 50px;
+		width: 80%;
+		padding: 0 0 30px 0;
+		// border: 1px solid black;
+	}
+	.portfolio-text{
+		// border: 1px solid red;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+	.container{
+		// border: 1px solid  blue;
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+		width: 100%;
+	}
+	.container-blurb{
+	// border: 1px solid orange;
+	}
+		p, h3{
+			margin: 0 auto;
+			width: 80%;
+			padding-top: 10px;
+		}
+		.button-div{
+			// border: 1px solid red;
+			text-align: center;
+			margin-top: 10%;
+
+		}
+	}
+	.portfolio-display{
+		// border: 1px solid blue;
+		margin: 0 0 30px 0;
+		width: 60%;
+		img{
+		width: 80%;
+		}
+	}
+	.card-1 .portfolio-display{
+		// border: 1px solid blue;
+		margin: -40px 0 30px 0;
+		width: 60%;
+		img{
+		width: 80%;
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+		section.portfolio{
+			.portfolio-text{
+				// border: 1px solid red;
+				width: 70%;
+				display: flex;
+				flex-direction: column;
+				margin: auto;
+			.container{
+				// border: 1px solid  blue;
+				display: flex;
+				margin: auto;
+				flex-direction: column;
+			}
+		}
+			.portfolio-display{
+				// border: 1px solid green;
+				margin-right: -40px;
+				width: 90%;
+			}
+			.card-1 .portfolio-display{
+				// border: 1px solid blue;
+				margin-right: -40px;
+				width: 90%;
+			}
+		}
+		button{
+			position: relative;
+			top: -20px;
+		}
+	}
+
+@media (max-width: 736px) {
+		section.portfolio{
+			background-color: rgb(245, 245, 245);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			h2{
+				padding-top: 50px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.card-1, .card-2, .card-3, .card-4, .card-5{
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				width: 100%;
+				padding: 0 0 30px 0;
+				// border: 1px solid orange;
+			}
+			.portfolio-text{
+				width: 90%;
+				margin: 0 auto;
+			.container{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				height: 80%;
+				// border: 1px solid red;
+			}
+				p, h3{
+					margin: 0 auto;
+					width: 80%;
+					padding-top: 10px;
+				}
+				.button-div{
+					// border: 1px solid red;
+					text-align: center;
+					margin-top: 5%;
+				}
+			}
+			.portfolio-display{
+				margin: 0 auto;
+				width: 80%;
+				padding-top: 0;
+				margin-top: -20px;
+				img{
+				max-width: 100%;
+				}
+			}
+			.card-1{
+				.portfolio-text{
+					order: 1;
+					button{
+						margin: 25px;
+					}
+				}
+				.portfolio-display{
+					margin: 0 auto;
+					padding: 0;
+				}
+
+			} 
+			.card-2{
+				.portfolio-text{
+					order: 2;
+					button{
+						margin: 25px;
+					}
+				}
+				.portfolio-display{
+					margin: 0 auto;
+					padding: 0;
+				}
+
+			} 
+			.card-3{
+				.portfolio-text{
+					order: 1;
+					button{
+						margin: 25px;
+					}
+				}
+				.portfolio-display{
+					margin: 0 auto;
+					padding: 0;
+				}
+
+			} 
+			.card-4{
+				.portfolio-text{
+					order: 1;
+					button{
+						margin: 25px;
+					}
+				}
+				.portfolio-display{
+					margin: 0 auto;
+					padding: 0;
+				}
+
+			} 
+			.card-5{
+				.portfolio-text{
+					order: 1;
+					button{
+						margin: 25px;
+					}
+				}
+				.portfolio-display{
+					margin: 0 auto;
+					padding: 0;
+				}
+
+			} 
+		}	
+	}

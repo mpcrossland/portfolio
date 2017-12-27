@@ -1,0 +1,135 @@
+header{
+	background-image: url('../../dev/images/mist_opt.jpg');
+	background-size: cover;
+	background-position: 50%;
+	background-position-x: 50%;
+	background-position-y: center;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -200;
+	top:0;
+	left:0;
+
+	.thankyou{
+		text-align: center;
+		position: relative;
+		top:20%;
+		h2{
+			color: white;
+		}
+		button{
+			background-color: white;
+		}
+	}
+}
+@-webkit-keyframes blink {
+  0%     { opacity: 0 } 50% { opacity: 0 }
+  50.01% { opacity: 1 } 100% { opacity: 1 }
+}
+blink {
+  -webkit-animation: blink 0.7s infinite linear alternate;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  line-height: 70px;
+  margin: 0;
+  z-index: 99999;
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bgOverlay{
+	animation: 1.3s ease-out 0s slideInFromRight;
+	position: absolute;
+    width: 70%;
+    height: 23%;
+    top: calc(25% + 100px);
+    right: 0;
+    margin-top: -100px;
+    background: rgba(75, 85, 85, 0.5);
+    // background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    .h1-contain{
+    	width: 200px;
+    	position: absolute;
+    	left: 11%;
+    	top: 50%;
+    	margin-top: -100px;
+    	margin-left: -100px;
+	    h1 {
+	    text-align: left;
+	    width: auto;
+	    height: auto;
+	    margin: 0 auto;
+	    padding: 25px;
+	    position: relative;
+	    }
+    }
+    span.web-dev{
+    	// border: 1px solid red;
+	font-family: Montserrat;
+	color:  #333333;
+	font-weight: 700;
+	line-height: 33.6px;
+	text-align: center;
+	margin: 0 0 25px 0;
+	text-transform: uppercase;
+    text-align: left;
+    font-size: 1.9em;
+    font-weight: 400;
+    color: white;
+	position: absolute;
+	left: 17%;
+	bottom: -35%;
+	margin-top: -100px;
+	margin-left: -100px;
+
+    }
+}
+
+nav{
+	margin: 10px 30px 0 30px;
+	display: flex;
+	justify-content: space-between;
+	ul.desktop {
+		font-family: Montserrat;
+		text-transform: uppercase;
+		color:  #ffffff;
+		font-size: 13px;
+		font-weight: 400;
+		height: 20px;
+		align-self: center;
+		
+			li{
+				display: inline-block;
+				padding-left: 10px;
+			}
+		}
+		.logo h3{
+			display: inline-block;
+			font-family: Montserrat;
+			text-transform: uppercase;
+			color:  #ffffff;
+			font-size: 13px;
+			font-weight: 400;
+		}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.bgOverlay{
+		width: 100%;
+		height: 20%;
+		.h1-contain{
+		h1{
+			padding: 40px;
+			top: 15px;
+		}
+		}
+	}
+}

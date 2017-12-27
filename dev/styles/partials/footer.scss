@@ -1,0 +1,57 @@
+footer{
+	background-color:  #191919;
+	width: 100%;
+	height: 140px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.footer-container{
+		// border: 1px solid blue;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+
+		align-items: center;
+
+		.social{
+			// border: 1px solid red;
+			display: flex;
+
+		.circleBase {
+		    border-radius: 50%;
+		    margin: 10px;
+		}
+		.type2 {
+		    width: 35px;
+		    height: 35px;
+		    background: #fff;
+		    border: 3px solid #000;
+		    position: relative;
+		    .fa{
+		    	width: auto;
+		    	 height: auto;
+		    	 margin: 0 auto;
+		    	 padding: 9px;
+		    	 position: relative;
+		    }
+		    .fa:hover{
+				color: white;
+				background-color: #191919;
+				font-size: 2em;
+				position: relative;
+				bottom: 8px;
+				left: -7px;
+		    }
+		}
+			
+		}
+		.copy{
+			// border: 1px solid orange;
+			p{
+			font-size: 11px;
+			color: rgb(204, 204, 204);
+			}
+		}
+	}
+
+}
